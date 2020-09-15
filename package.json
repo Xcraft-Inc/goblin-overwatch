@@ -15,7 +15,8 @@
   "dependencies": {
     "xcraft-core-goblin": "^4.0.1",
     "xcraft-core-busclient": "^4.0.3",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "prettier": "2.0.4",
