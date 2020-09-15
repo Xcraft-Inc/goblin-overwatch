@@ -1,5 +1,5 @@
 {
-  "name": "goblin-fakeapi",
+  "name": "goblin-overwatch",
   "version": "0.0.1",
   "author": "",
   "license": "MIT",
@@ -13,7 +13,9 @@
     }
   },
   "dependencies": {
-    "xcraft-core-goblin": "^4.0.1"
+    "xcraft-core-goblin": "^4.0.1",
+    "xcraft-core-busclient": "^4.0.3",
+    "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
     "prettier": "2.0.4",
