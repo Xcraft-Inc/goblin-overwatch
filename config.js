@@ -3,6 +3,12 @@
 module.exports = [
   {
     type: 'input',
+    name: 'mode',
+    message: 'Mode define how you want to get or report erros',
+    default: 'debounce',
+  },
+  {
+    type: 'input',
     name: 'channels',
     message: 'list of available channels',
     default: null,
