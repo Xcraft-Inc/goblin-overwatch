@@ -5,7 +5,7 @@ module.exports = [
     type: 'input',
     name: 'channels',
     message: 'list of available channels',
-    default: {discord: [], mail: []},
+    default: null,
   },
   {
     type: 'input',
