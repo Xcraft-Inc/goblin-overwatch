@@ -16,6 +16,14 @@ example of config in your app.json :
 }
 ```
 
+To use it in your app, get API to init overwatch and enable overwatch mode for buslog.
+
+```javascript
+    const owAPI = quest.getAPI('overwatch');
+    yield owAPI.init();
+    yield quest.cmd('buslog.enable', {modes: ['overwatch']});
+```
+
 List of all overwatch agents available :
 
 - ana
