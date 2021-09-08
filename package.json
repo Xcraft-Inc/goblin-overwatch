@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "",
   "license": "MIT",
-  "description": "Goblin to test goblin-tradingpost",
+  "description": "Goblin Overwatch",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,13 +13,14 @@
     }
   },
   "dependencies": {
+    "immutable": "4.0.0-rc.14",
+    "request": "^2.88.2",
+    "lodash.debounce": "^4.0.8",
+    "sendmail": "^1.6.1",
     "xcraft-core-goblin": "^4.0.1",
     "xcraft-core-busclient": "^4.0.3",
     "xcraft-core-utils": "^3.0.1",
-    "xcraft-core-host": "^2.3.0",
-    "lodash.debounce": "^4.0.8",
-    "request": "^2.88.2",
-    "sendmail": "^1.6.1"
+    "xcraft-core-host": "^2.3.0"
   },
   "devDependencies": {
     "prettier": "2.0.4",
