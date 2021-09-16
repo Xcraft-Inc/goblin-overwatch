@@ -17,10 +17,10 @@
     "request": "^2.88.2",
     "lodash.debounce": "^4.0.8",
     "sendmail": "^1.6.1",
-    "xcraft-core-goblin": "^4.0.1",
-    "xcraft-core-busclient": "^4.0.3",
-    "xcraft-core-utils": "^3.0.1",
-    "xcraft-core-host": "^2.3.0"
+    "xcraft-core-goblin": "^5.0.0",
+    "xcraft-core-busclient": "^5.0.0",
+    "xcraft-core-utils": "^4.0.0",
+    "xcraft-core-host": "^3.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.4",
