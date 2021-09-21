@@ -13,12 +13,14 @@
     }
   },
   "dependencies": {
+    "gigawatts": "^4.0.5",
     "immutable": "4.0.0-rc.14",
     "request": "^2.88.2",
     "lodash.debounce": "^4.0.8",
     "sendmail": "^1.6.1",
+    "xcraft-core-etc": "^3.0.0",
+    "xcraft-core-fs": "^2.1.0",
     "xcraft-core-goblin": "^5.0.0",
-    "xcraft-core-busclient": "^5.0.0",
     "xcraft-core-utils": "^4.0.0",
     "xcraft-core-host": "^3.0.0"
   },
