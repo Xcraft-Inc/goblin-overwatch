@@ -4,6 +4,9 @@ goblin to report errors or strange behavior in your apps.
 example of config in your app.json :
 
 ```json
+"xcraft-core-log": {
+    "modes": ["overwatch"]
+},
 "goblin-overwatch": {
     "mode": "debounce",
     "channels": {
@@ -21,7 +24,6 @@ To use it in your app, get API to init overwatch and enable overwatch mode for b
 ```javascript
     const owAPI = quest.getAPI('overwatch');
     yield owAPI.init();
-    yield quest.cmd('buslog.enable', {modes: ['overwatch']});
 ```
 
 List of all overwatch agents available :
