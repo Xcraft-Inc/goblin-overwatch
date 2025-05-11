@@ -34,7 +34,7 @@ Les erreurs sont ensuite formatées et envoyées aux canaux configurés (Discord
 async elfQuest() {
   // Initialiser le service avec un temps de debounce personnalisé (en ms)
   const overwatch = this.quest.getAPI('overwatch');
-  await overwatch.init(60000); // Debounce de 60 secondes
+  await overwatch.init({debounceTime: 60000}); // Debounce de 60 secondes
 }
 ```
 
@@ -46,22 +46,19 @@ async elfQuest() {
   const overwatch = this.quest.getAPI('overwatch');
   try {
     // Code qui peut générer une exception
-  } catch (error) {
+  } catch (err) {
     await overwatch.exception({
-      err: error.message,
-      id: 'unique-error-id', // Optionnel, un hash sera généré si non fourni
-      time: new Date().toISOString(),
-      _xcraftOverwatch: true, // Pour les erreurs internes à Xcraft
-      goblin: {
-        id: ['goblin-id'],
-        quest: ['quest-name'],
-        callerGoblin: ['caller-goblin-id'],
-        callerQuest: ['caller-quest-name'],
-      },
+      error: {
+        err: err.message,
+        mod: 'module',
+        time: new Date().toISOString(),
+      }
     });
   }
 }
 ```
+
+Ce mécanisme est automatiquement utilisé par le module xcraft-core-buslog en cas de génération de message d'erreurs avec `this.log.err` si le module overwatch est activé dans votre app.json pour xcraft-core-buslog.
 
 ### Signaler un comportement suspect
 
@@ -70,9 +67,11 @@ async elfQuest() {
 async elfQuest() {
   const overwatch = this.quest.getAPI('overwatch');
   await overwatch.hazard({
-    err: 'Description du comportement suspect',
-    mod: ['module-name'],
-    time: new Date().toISOString(),
+    error: {
+      err: 'Description du comportement suspect',
+      mod: ['module-name'],
+      time: new Date().toISOString(),
+    }
   });
 }
 ```
