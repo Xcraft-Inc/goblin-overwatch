@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "gigawatts": "^4.0.5",
+    "got": "^13.0.0",
     "immutable": "4.0.0-rc.14",
-    "request": "^2.88.2",
     "lodash.debounce": "^4.0.8",
     "xcraft-core-etc": "^3.0.0",
     "xcraft-core-fs": "^2.1.0",
