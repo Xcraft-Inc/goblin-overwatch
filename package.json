@@ -13,6 +13,7 @@
     }
   },
   "dependencies": {
+    "formdata-node": "^6.0.3",
     "gigawatts": "^4.0.5",
     "got": "^13.0.0",
     "immutable": "4.0.0-rc.14",
