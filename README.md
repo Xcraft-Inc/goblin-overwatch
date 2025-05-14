@@ -113,7 +113,7 @@ Exemple :
   "mode": "debounce",
   "channels": {
     "discord": [
-      "${serverId}/${channelId}" // insert ids of your discord webhook
+      "${serverId}/${channelId}"
     ],
     "mail": []
   },
@@ -157,7 +157,9 @@ Implémentation du backend email pour l'envoi de notifications. Il gère :
 
 - La conversion du format HTML vers texte brut
 - La configuration de l'expéditeur et du destinataire
-- L'envoi des emails via le module `sendmail`
+- Le formatage des messages d'erreur pour l'envoi par email
+
+Note: L'implémentation actuelle du backend mail n'est pas complète et lance une erreur "Not implemented! See nodemailer module".
 
 ### `config.js`
 
