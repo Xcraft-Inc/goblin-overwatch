@@ -4,6 +4,15 @@
 
 Le module `goblin-overwatch` est un système de surveillance et de rapport d'erreurs pour les applications Xcraft. Il permet de collecter, agréger et notifier les erreurs et comportements suspects qui se produisent dans l'application, via différents canaux comme Discord ou email.
 
+## Sommaire
+
+- [Structure du module](#structure-du-module)
+- [Fonctionnement global](#fonctionnement-global)
+- [Exemples d'utilisation](#exemples-dutilisation)
+- [Interactions avec d'autres modules](#interactions-avec-dautres-modules)
+- [Configuration avancée](#configuration-avancée)
+- [Détails des sources](#détails-des-sources)
+
 ## Structure du module
 
 - **Service principal** : Un goblin singleton qui gère la collecte et l'envoi des erreurs
@@ -188,10 +197,6 @@ Définit les options de configuration disponibles pour le module :
 - **mode** : Mode de fonctionnement (`debounce` ou `manual`)
 - **channels** : Canaux disponibles pour les notifications
 - **agent** : Nom de l'agent qui rapporte les erreurs (avec une liste de personnages d'Overwatch comme choix)
-
-### `eslint.config.js`
-
-Configuration ESLint pour le module, définissant les règles de style de code et les plugins utilisés (js, react, jsdoc, babel, prettier).
 
 ### `overwatch.js`
 
