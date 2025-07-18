@@ -1,7 +1,12 @@
 {
   "name": "goblin-overwatch",
   "version": "2.2.4",
-  "author": "",
+  "author": "Epsitec SA",
+  "contributors": [
+    "Samuel Loup <loup@epsitec.ch>",
+    "Mathieu Schroeter <schroeter@epsitec.ch>",
+    "Gillian Fries <fries@epsitec.ch>"
+  ],
   "license": "MIT",
   "description": "Goblin Overwatch",
   "scripts": {
